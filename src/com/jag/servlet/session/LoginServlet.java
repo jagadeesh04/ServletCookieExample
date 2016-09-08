@@ -25,6 +25,7 @@ public class LoginServlet extends HttpServlet {
 		String user = request.getParameter("user");
 		String pwd = request.getParameter("pwd");
 		
+		
 		if(userID.equals(user) && password.equals(pwd)){
 			Cookie loginCookie = new Cookie("user",user);
 			//setting cookie to expiry in 30 mins
